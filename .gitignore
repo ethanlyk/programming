@@ -1,0 +1,9 @@
+*.sw*
+*/node_modules/
+*.log
+*/dist/
+server.bundle.js
+tmp/
+a.out
+mysort
+*.class
