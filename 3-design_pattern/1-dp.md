@@ -1,4 +1,6 @@
 ### GoF 23-Design Pattern
+* Design Pattern: 樣式是某外在背景環境(Context) 下﹐對特定問題(Problem)的慣用解決之道(Solution)    
+
 * Creational: 如何有效率的產生、管理與操作物件
 	* Abstract Factory: 它可以產生一系列的物件，維護同一系列物件之間的關係
 	* Builder: 物件是由個別組件（Component）組合而成，個別組件建立非常複雜，但說明如何運用組件建立非 常簡單，您希望將建立複雜組件與運用組件方式分離，則可以使用Builder模式。
