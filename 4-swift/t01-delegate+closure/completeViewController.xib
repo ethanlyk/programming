@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="completeViewController" customModule="t02" customModuleProvider="target">
+            <connections>
+                <outlet property="orderLabel" destination="iDe-ch-rWK" id="OA4-4h-wWa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的訂單已經完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAM-zI-c84">
+                    <rect key="frame" x="137.5" y="69" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDe-ch-rWK">
+                    <rect key="frame" x="186" y="105" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VL-8R-2uB">
+                    <rect key="frame" x="191.5" y="433" width="31" height="30"/>
+                    <state key="normal" title="確定"/>
+                    <connections>
+                        <action selector="backToHome:" destination="-1" eventType="touchUpInside" id="ygK-BJ-szO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iDe-ch-rWK" firstAttribute="top" secondItem="GAM-zI-c84" secondAttribute="bottom" constant="15" id="1px-yP-3xz"/>
+                <constraint firstItem="7VL-8R-2uB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2uc-U1-tKr"/>
+                <constraint firstItem="7VL-8R-2uB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4fk-uH-vyM"/>
+                <constraint firstItem="iDe-ch-rWK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Oi-b4-Uhc"/>
+                <constraint firstItem="GAM-zI-c84" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fng-VB-tJg"/>
+                <constraint firstItem="iDe-ch-rWK" firstAttribute="top" secondItem="GAM-zI-c84" secondAttribute="bottom" constant="15" id="UPr-oA-KTn"/>
+                <constraint firstItem="GAM-zI-c84" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="xRr-WO-Q4r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133" y="154"/>
+        </view>
+    </objects>
+</document>
